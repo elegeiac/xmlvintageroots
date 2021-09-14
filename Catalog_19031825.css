@@ -1,0 +1,514 @@
+/* Importing fonts */
+@font-face {
+    font-family: Beon;
+    src: url(Font/beon.ttf);
+}
+
+@font-face {
+    font-family: Caveat;
+    src: url(Font/caveat.ttf);
+}
+
+@font-face {
+    font-family: Cinzel;
+    src: url(Font/cinzel.ttf);
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #25df25, 0 0 20px #1a8b16, 0 0 30px #045e10;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 5px #ffffff, 0 0 30px #28a5d6, 0 0 40px #116979, 0 0 50px #0e4c64;
+    }
+  }
+
+/* For overall page */
+musicStore{
+	display: block;
+	font-family: "Times New Roman",Times, sans-serif;
+	background: rgb(0, 0, 0);
+	height: 100vh; 
+	background-size:100% 100%;
+	background-position: center;
+}
+
+/* For store deatils header */
+storeDetailsHeader{
+    display:block;
+    height: auto;
+    font-size: large;
+    text-align: center;
+}
+
+/* For top header logo */
+logo{
+    margin-top: 2em;
+    height: 300px;
+    content: url(image/logo.png);
+    float: center;
+    padding-top: 2em;
+}
+
+/* For store name of the header */
+storeName{
+    display: block;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(55, 189, 55);
+    font-family: Beon;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* For about us paragraph of the header */
+aboutUs{
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    transition: 0.3s;
+    font-size: 20px;
+    width: 60%;
+    font-family: Caveat ;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+aboutUs:hover{
+    transform:scale(1.3);
+}
+
+/* For the main body container */
+music{
+    display: flex;
+    border: 5px solid rgba(110, 41, 41,0.9);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10% 10% 10% 10%;
+    padding: 1% 2% 2% 2%;
+    background-color:rgba(163, 225, 236, 0.486);
+    border-radius: 25px;
+}
+
+/* For main body store collection title */
+music::before{
+    display: block;
+    content: "Store Collection";
+    font-family: Beon;
+    font-weight: bold;
+    font-size: 60px;
+    color: rgb(5, 56, 5);
+}
+
+/* For the container which displays each song */
+song{
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+    transition: 1s;
+    margin: 2% 5% 5% 5%;
+    padding: 2% 2% 2% 2%;
+    border-radius: 15px;
+    background-color:#b1b1b19a;
+    width: 75%;
+    height: auto;
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+/* For the title of the song */
+title{
+    display: block;
+    font-size: 3em;
+    font-family: Caveat;
+    color: #05386B;
+    text-align: center;
+
+}
+
+/* For the text before the title */
+title::before{
+    content: "Song: ";
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(5, 56, 5);
+}
+
+/* For the genre of the song */
+genre{
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: Cinzel;
+    color: #0a223a;
+    text-align: center;
+}
+
+/* For the text before the genre */
+genre::before{
+    content: "Genre: ";
+    font-family: Cinzel;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(5, 56, 5);
+}
+
+/* For the price of the song */
+price{
+    display: block;
+    font-family: Beon;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/* For the text before the price */
+price::before{
+    content: "Price: " ' 'attr(currency);
+    padding-right: 10px;
+    font-family: Caveat;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(5, 56, 5);
+}
+
+/* For the cover art image of the song */
+coverArt{
+    display:block;
+    background-size: cover;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+coverArt:hover{
+    box-shadow: 4px 4px 4px 4px #05386B;
+
+}
+
+/* For the cover art of first song */
+coverArt[coverID="CA01"]{
+    background-image: url(image/CA01.PNG);
+    width: 20em;
+    height: 17em;
+}
+
+/* For the cover art of second song */
+coverArt[coverID="CA02"]{
+    background-image: url(Image/CA02.jpg);
+    width: 20em;
+    height: 20em;
+
+}
+
+/* For the cover art of third song */
+coverArt[coverID="CA03"]{
+    background-image: url(Image/CA03.jpg);
+    width: 20em;
+    height: 23em;
+}
+
+/* For the cover art of fourth song */
+coverArt[coverID="CA04"]{
+    background-image: url(Image/CA04.jpg);
+    width: 20em;
+    height: 20em;
+}
+
+/* For the cover art of fifth song */
+coverArt[coverID="CA05"]{
+    background-image: url(Image/CA05.PNG);
+    width: 20em;
+    height: 20em;
+}
+
+/* For the cover art of sixth song */
+coverArt[coverID="CA06"]{
+    background-image: url(Image/CA06.jpg);
+    width: 20em;
+    height: 20em;
+}
+
+/* For the cover art of seventh song */
+coverArt[coverID="CA07"]{
+    background-image: url(Image/CA07.jpg);
+    width: 20em;
+    height: 25em;
+
+}
+
+/* For the cover art of eighth song */
+coverArt[coverID="CA08"]{
+    background-image: url(Image/CA08.jpg);
+    width: 20em;
+    height: 17em;
+}
+
+/* For the cover art of ninth song */
+coverArt[coverID="CA09"]{
+    background-image: url(Image/CA09.jpg);
+    width: 20em;
+    height: 17em;
+
+}
+
+/* For the cover art of tenth song */
+coverArt[coverID="CA10"]{
+    background-image: url(Image/CA10.jpg);
+    background-size: cover;
+    width: 20em;
+    height: 17em;
+}
+
+/* For the cover art of eleventh song */
+coverArt[coverID="CA11"]{
+    background-image: url(Image/CA11.png);
+    width: 20em;
+    height: 19em;
+}
+
+/* For the cover art of twelfth song */
+coverArt[coverID="CA12"]{
+    background-image: url(Image/CA12.png);
+    width: 20em;
+    height: 19em;
+}
+
+/* For the singer of the song */
+singer{
+    display: block;
+    margin-top: 1em;
+    font-size: 30px;
+    font-family: Cinzel;
+    color: #0a223a;
+    text-align: center;
+}
+
+/* For the text before the singer */
+singer::before{
+    content: "Singer: ";
+    font-family: Cinzel;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(5, 56, 5);
+}
+
+/* For the production division of the song */
+production{
+    display: block;
+    float: left;
+    text-align: left;
+    margin-top: 0.5em;
+    margin-left: 5%;
+    margin-bottom: 1em;
+    width: 40%;
+    border-radius: 15px;
+    background-color: rgba(132, 169, 218, 0.568);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+production:hover{
+    box-shadow: 0 4px 8px 0 rgb(110, 11, 11);
+    transform:scale(1.1);
+}
+
+/* For the text before the production division */
+production::before{
+    content: "Production: ";
+    margin-left: 22%;
+    font-family: Beon;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(5, 56, 5);
+}
+
+/* For the elements inside production division */
+director,producer, writer,recordLabel{
+    padding: 10px;
+    font-size: 20px;
+    display: list-item;
+    list-style-type:disc;
+    font-family: Cinzel;
+    color: #0a223a;
+
+}
+
+/* For the description division of the song */
+description{
+    display: block;
+    float: right;
+    text-align: left;
+    margin-top: 0.5em;
+    margin-right: 5%;
+    margin-bottom: 1em;
+    width: 40%;
+    border-radius: 15px;
+    background-color: rgba(132, 169, 218, 0.568);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+description:hover{
+    box-shadow: 0 4px 8px 0 rgb(110, 11, 11);
+    transform:scale(1.1);
+}
+
+
+/* For the text before the description division */
+description::before{
+    margin-left: 22%;
+    content: "Description: ";
+    font-family: Beon;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(5, 56, 5);
+}
+
+/* For the text before the director */
+director::before{
+    content: "Director: ";
+    font-family: Cinzel;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(5, 56, 5);
+}
+
+/* For the text before the producer */
+producer::before{
+    content: "Producer: ";
+    font-family: Cinzel;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(5, 56, 5);
+}
+
+/* For the text before the writer */
+writer::before{
+    content: "Writer: ";
+    font-family: Cinzel;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(5, 56, 5);
+}
+
+/* For the text before the recordLabel */ 
+recordLabel::before{
+    content: "Record Label: ";
+    font-family: Cinzel;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(5, 56, 5);
+}
+
+/* For the elements inside description division */
+subTitle,album,releaseYear,length,rating{
+    padding: 10px;
+    font-size: 20px;
+    display: list-item;
+    list-style-type:disc;
+    font-family: Cinzel;
+    color: #0a223a;
+}
+
+/* For the text before the subTitle */
+subTitle::before{
+    content: "Sub Title: ";
+    font-family: Cinzel;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(5, 56, 5);
+}
+
+/* For the text before the Album */
+album::before{
+    content: "Album: ";
+    font-family: Cinzel;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(5, 56, 5);
+}
+
+/* For the text before the Length */
+length::before{
+    content: "Length: ";
+    font-family: Cinzel;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(5, 56, 5);
+}
+
+/* For the text before the releaseYear */
+releaseYear::before{
+    content: "Release Year: ";
+    font-family: Cinzel;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(5, 56, 5);
+}
+
+/* For the text before the rating */
+rating::before{
+    content: "Rating: ";
+    font-family: Cinzel;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(5, 56, 5);
+}
+
+/* For store deatils footer */
+storeDetailsFooter{
+    display:block;
+    width: 100%;
+    height: auto;
+    font-family: Cinzel;
+    text-align: center;
+}
+
+/* For bottom footer logo */
+logoFooter{
+
+    height: 7em;
+    content: url(image/logo.png);
+    float: center;
+    padding-top: 2%;
+}
+
+/* For elements of the store deatils footer */
+address,phoneNumber,email,website,copyright{
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+
+/* For the text before the email */
+email::before{
+    content: "Email: ";
+}
+/* For the text before the contact info */
+address::before{
+    content: "Address: ";
+}
+
+/* For the text before the phoneNumber */
+phoneNumber::before{
+    content: "Contact: ";
+}
+
+/* For the text before the website */
+website::before{
+    content: "Website: ";
+}
+
+copyright{
+    margin-top: 1%;
+}

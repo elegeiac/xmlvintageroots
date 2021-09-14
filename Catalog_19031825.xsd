@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Author : Ushaan Shrestha
+Date   : 27th May, 2021
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="musicStore">
+        <xs:complexType>
+            <xs:sequence>
+                <!--Declaration of the child elements of music store details header-->
+                <xs:element name="storeDetailsHeader">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!--Declaration of the element logo-->
+                            <xs:element type="xs:string" name="logo"/>
+                            <!--Declaration of the element storeName-->
+                            <xs:element type="xs:string" name="storeName"/>
+                            <!--Declaration of the element aboutUs-->
+                            <xs:element type="xs:string" name="aboutUs"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!--Declaration of the child elements of music-->
+                <xs:element name="music">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!--Declaration of the child elements of song-->
+                            <xs:element name="song" maxOccurs="unbounded" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <!--Declaration of the element title-->
+                                        <xs:element type="xs:string" name="title"/>
+                                        <!--Declaration of the element coverArt along with its attributes-->
+                                        <xs:element name="coverArt" maxOccurs="1" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="coverID" use="required">
+                                                            <!--Declaring restriction pattern for the coverID attribute-->
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:string">
+                                                                    <xs:pattern value="[A-Z][A-Z][0-9][0-9]"/>
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <!--Declaration of the element singer along with its attributes-->
+                                        <xs:element name="singer" maxOccurs="unbounded" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="singerCode" use="required"> 
+                                                            <!--Declaring restriction pattern for the singerCode attribute-->
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:string">
+                                                                    <xs:pattern value="[A-Z][A-Z]"/>
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                       
+                                        <!--Declaration of the element genre-->
+                                        <xs:element type="xs:string" name="genre"/>
+                                        <!--Declaration of the element price along with its attributes-->
+                                        <xs:element name="price">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:float">
+                                                        <xs:attribute type="xs:string" name="currency"/>
+                                                        <xs:attribute type="xs:string" name="discount" use="optional"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <!--Declaration of the child elements of production -->
+                                        <xs:element name="production">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <!--Declaration of the element director-->
+                                                    <xs:element type="xs:string" name="director" minOccurs="0"/>
+                                                    <!--Declaration of the element producer-->
+                                                    <xs:element type="xs:string" name="producer" maxOccurs="unbounded" minOccurs="0"/>
+                                                    <!--Declaration of the element writer-->
+                                                    <xs:element type="xs:string" name="writer" maxOccurs="unbounded" minOccurs="1"/>
+                                                    <!--Declaration of the element recordLabel-->
+                                                    <xs:element type="xs:string" name="recordLabel" maxOccurs="1" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <!--Declaration of the child elements of description -->
+                                        <xs:element name="description">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <!--Declaration of the element subTitle-->
+                                                    <xs:element type="xs:string" name="subTitle" maxOccurs="1" minOccurs="0"/>
+                                                    <!--Declaration of the element album-->
+                                                    <xs:element type="xs:string" name="album" maxOccurs="1" minOccurs="0"/>
+                                                    <!--Declaration of the element releaseYear-->
+                                                    <xs:element type="xs:short" name="releaseYear"/>
+                                                    <!--Declaration of the element length-->
+                                                    <xs:element type="xs:string" name="length"/>
+                                                    <!--Declaration of the element rating-->
+                                                    <xs:element type="xs:string" name="rating" maxOccurs="1" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    
+                                    <!--Declaration of the atrribute of element song-->
+                                    <xs:attribute type="xs:string" name="songCode"/>
+                                    <xs:attribute type="xs:string" name="language" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                 </xs:element>
+
+                <!--Declaration of the child elements of music store details footer-->
+                <xs:element name="storeDetailsFooter">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!--Declaration of the element logoFooter-->
+                            <xs:element type="xs:string" name="logoFooter"/>
+                            <!--Declaration of the element address-->
+                            <xs:element type="xs:string" name="address"/>
+                            <!--Declaration of the element phoneNumber along with its attribute-->
+                            <xs:element name="phoneNumber" maxOccurs="unbounded" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute type="xs:string" name="type"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <!--Declaration of the element email-->
+                            <xs:element type="xs:string" name="email"/>
+                            <!--Declaration of the element website-->
+                            <xs:element type="xs:anyURI" name="website"/>
+                            <!--Declaration of the element copyright-->
+                            <xs:element type="xs:string" name="copyright"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

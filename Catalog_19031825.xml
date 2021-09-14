@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    Author: Ushaan Shrestha
+    Date  : 7th May 2021
+-->
+<!-- Linking CSS-->
+<?xml-stylesheet type="text/css" href="Catalog_19031825.css"?>
+<!-- Load internal DTD to the xml document for xml validation -->
+<!DOCTYPE musicStore SYSTEM "catalog_19031825.dtd">
+<!-- Root tag and linking Schema-->
+<musicStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Catalog_19031825.xsd">
+    <!-- Header of the Page-->
+    <storeDetailsHeader>
+        <!-- Logo of the Store -->
+        <logo> </logo>
+        <storeName>Vintage Roots</storeName>
+        <!-- Introduction of the Store-->
+        <aboutUs> Vintage Roots is the leading online music store for audiophiles who want the finest sound quality. Our mission is to have the world's largest online collection of studio-quality high-resolution music of all genres and to provide the best service possible for artists and labels to share and monetize their music, as well as for fans to discover and enjoy it. We believe that music is an essential part of culture, and that in order for that culture to flourish, we work to continuously push creativity and inspiration through this commitment, helping to lead and shape the evolution of music culture.</aboutUs>
+    </storeDetailsHeader>
+    <!-- Body portion of the page containing all the music -->
+    <music>
+        <!-- First Song Section -->
+        <song songCode="ED01JM" language="English">
+        
+            <title>Edge of Desire</title>
+            <coverArt coverID="CA01"> </coverArt>
+            <singer singerCode="JM">John Mayer</singer>
+            <genre>Contemporary</genre>
+            <price currency="$" discount="10%" >5.75</price>
+            <!-- Deatils of the production team-->
+            <production>
+                <producer>Steve Jordan</producer>
+                <writer>John Mayer</writer>
+                <recordLabel>Columbia</recordLabel>
+            </production>
+            <!-- Description of the song -->
+            <description>
+                <album>Battle Studies</album>
+                <releaseYear>2009</releaseYear>
+                <length>5:32</length>
+                <rating>4.9/5</rating>
+            </description>
+            
+        </song>
+        <!-- Second Song Section -->
+        <song songCode="MW02JB" language="English">
+            <title>It's a Man's Man's Man's World</title>
+            <coverArt coverID="CA02"> </coverArt>
+            <singer singerCode="JB">James Brown</singer>
+            <genre>Soul</genre>
+            <price currency="$" discount="5%" >3.50</price>
+            <!-- Deatils of the production team-->
+            <production>
+                <producer>James Brown</producer>
+                <writer>James BrownBetty</writer> 
+                <writer>Jean Newsome</writer>
+                <recordLabel>Columbia</recordLabel>
+            </production>
+            <!-- Description of the song -->
+            <description>
+                <subTitle>Is It Yes or Is It No?</subTitle>
+                <releaseYear>1966</releaseYear>
+                <length>2:52</length>
+                <rating>4/5</rating>
+            </description>
+        </song>
+        <!-- Third Song Section -->
+        <song songCode="L03EC" language="English">
+            <title>Layla</title>
+            <coverArt coverID="CA03"> </coverArt>
+            <singer singerCode="EC">Eric Clapton</singer>
+            <genre>Rock</genre>
+            <price currency="$" discount="5%" >4.50</price>
+            <!-- Deatils of the production team-->
+            <production>
+                <director>Martin Scorsese</director>
+                <producer>Tom Dowd</producer>
+                <writer>Eric Clapton</writer>
+                <writer>Jim Gordon</writer>
+                <recordLabel>Atco (US)</recordLabel>
+            </production>
+            <!-- Description of the song -->
+            <description>
+                <subTitle>I am Yours</subTitle>
+                <album>Layla and Other Assorted Love Songs</album>
+                <releaseYear>1971</releaseYear>
+                <length>2:43</length>
+                <rating>4.5/5</rating>
+            </description>
+        </song>
+        <!-- Fourth Song Section -->
+        <song songCode="LB04MD" language="English">
+            <title>La Isla Bonita</title>
+            <coverArt coverID="CA04"> </coverArt>
+            <singer singerCode="MD">Madonna</singer>
+            <genre>Latin Pop</genre>
+            <price currency="$" discount="5%" >2.25</price>
+            <!-- Deatils of the production team-->
+            <production>
+                <director>Mary Lambert</director>
+                <producer>Madonna</producer>
+                <producer>Leonard</producer>
+                <writer>Madonna</writer>
+                <writer>Patrick Leonard</writer>
+                <recordLabel>Sire (US)</recordLabel>
+            </production>
+            <!-- Description of the song -->
+            <description>
+                <subTitle>The Beautiful Island</subTitle>
+                <releaseYear>1987</releaseYear>
+                <length>4:02</length>
+                <rating>3.5/5</rating>
+            </description>
+        </song>
+        <!-- Fifth Song Section -->
+        <song songCode="NL05JM" language="English">
+            <title>New Light</title>
+            <coverArt coverID="CA05"> </coverArt>
+            <singer singerCode="JM">John Mayer</singer>
+            <genre>Pop</genre>
+            <price currency="$" discount="5%" >5.25</price>
+            <!-- Deatils of the production team-->
+            <production>
+                <director>Fatal Farm</director>
+                <producer>John Mayer</producer>
+                <writer>John Mayer</writer>
+                <writer>Ernest Wilson</writer>
+                <recordLabel>Columbia</recordLabel>
+            </production>
+            <!-- Description of the song -->
+            <description>
+                <subTitle>The Beautiful Island</subTitle> 
+                <releaseYear>2018</releaseYear>
+                <length>3:49</length>
+                <rating>4/5 Stars</rating>
+            </description>
+        </song>
+        <!-- Sixth Song Section -->
+        <song songCode="B06AT" language="Nepali">
+            <title>Bachau</title>
+            <coverArt coverID="CA06"> </coverArt>
+            <singer singerCode="AT">Albatross</singer>
+            <genre>Alternative</genre>
+            <price currency="Rs." discount="10%" >500</price>
+            <!-- Deatils of the production team-->
+            <production>
+                <director>Himal Thapa</director>
+                <producer>Rohit Shakya</producer>
+                <writer>Albatross</writer>
+            </production>
+            <!-- Description of the song -->
+            <description>
+                <album>Raat ko Rani</album>
+                <releaseYear>2019</releaseYear>
+                <length>4:53</length>
+                <rating>4/5</rating>
+            </description>
+        </song>
+        <!-- Seventh Song Section -->
+        <song songCode="HN07IM" language="English">
+            <title>Hallowed Be Thy Name</title>
+            <coverArt coverID="CA07"> </coverArt>
+            <singer singerCode="IM">Iron Maiden</singer>
+            <genre>Heavy Metal</genre>
+            <price currency="£" discount="30%" >12.50</price>
+            <!-- Deatils of the production team-->
+            <production>
+                <director>Tim Kirkby</director>
+                <producer>Martin Birch</producer>
+                <writer>Steve Harris</writer>
+                <recordLabel>EMI</recordLabel>
+            </production>
+            <!-- Description of the song -->
+            <description>
+                <subTitle>A real dead one</subTitle>
+                <album>The Number of the Beast</album>
+                <releaseYear>1982</releaseYear>
+                <length>7:08</length>
+                <rating>3.9/5</rating>
+            </description>
+        </song>
+        <!-- Eighth Song Section -->
+        <song songCode="SM08SA" language="English">
+            <title>Snowman</title>
+            <coverArt coverID="CA08"> </coverArt>
+            <singer singerCode="SA">Sia</singer>
+            <genre>Seasonal</genre>
+            <price currency="£" discount="35%" >15.50</price>
+            <!-- Deatils of the production team-->
+            <production>
+                <director>Lior Molcho</director>
+                <producer>Greg Kurstin</producer>
+                <writer>Sia Furler</writer>
+                <writer>Greg Kursin</writer>
+                <recordLabel>Atlantic</recordLabel>
+            </production>
+            <!-- Description of the song -->
+            <description>
+                <subTitle>Promotional Single</subTitle>
+                <album>Everyday is Christmas</album>
+                <releaseYear>2017</releaseYear>
+                <length>2:45</length>
+                <rating>4.2/5</rating>
+            </description>
+        </song>
+        <!-- Ninth Song Section -->
+        <song songCode="SS09PE" language="French">
+            <title>Soleil Soleil</title>
+            <coverArt coverID="CA09"> </coverArt>
+            <singer singerCode="PE">Pomme</singer>
+            <genre>Pop</genre>
+            <price currency="€" discount="15%" >10.50</price>
+            <!-- Deatils of the production team-->
+            <production>
+                <producer>Albin de la Simone</producer>
+                <producer>Pomme</producer>
+                <writer>Pomme</writer>
+                <recordLabel>Polydor Records</recordLabel>
+            </production>
+            <!-- Description of the song -->
+            <description>
+                <album>Les Failles</album>
+                <releaseYear>2019</releaseYear>
+                <length>2:37</length>
+                <rating>4/5</rating>
+            </description>
+        </song>
+        <!-- Tenth Song Section -->
+        <song songCode="AW10PS" language="English">
+            <title>At my worst</title>
+            <coverArt coverID="CA10"> </coverArt>
+            <singer singerCode="PS">Pink Sweat$</singer>
+            <genre>R &#38; B</genre>
+            <price currency="$" discount="10%" >7.50</price>
+            <!-- Deatils of the production team-->
+            <production>
+                <director>Courtney Loo</director>
+                <producer>Thrice Cooked</producer>
+                <writer>Pink Sweat$</writer>
+                <recordLabel>Atlantic Records</recordLabel>
+            </production>
+            <!-- Description of the song -->
+            <description>
+                <album>Pink Planet</album>
+                <releaseYear>2020</releaseYear>
+                <length>3:11</length>
+                <rating>4/5</rating>
+            </description>
+        </song>
+        <!-- Eleventh Song Section -->
+        <song songCode="SE11VS" language="Russian">
+            <title>The 7th Element</title>
+            <coverArt coverID="CA11"> </coverArt>
+            <singer singerCode="VS">Vitas</singer>
+            <genre>Pop</genre>
+            <price currency="$" discount="10%" >5.50</price>
+            <!-- Deatils of the production team-->
+            <production>
+                <producer>Sergei Pudovkin</producer>
+                <writer>V. Borovsky</writer>
+                <recordLabel>Iceberg Records</recordLabel>
+            </production>
+            <!-- Description of the song -->
+            <description>
+                <album>Philosophy of Miracle</album>
+                <releaseYear>2001</releaseYear>
+                <length>4:10</length>
+                <rating>3/5</rating>
+            </description>
+        </song>
+        <!-- Twelfth Song Section -->
+        <song songCode="RS12BC" language="Nepali">
+            <title>Ram Sailee</title>
+            <coverArt coverID="CA12"> </coverArt>
+            <singer singerCode="BC">Bipul Chhetri</singer>
+            <genre>Folk</genre>
+            <price currency="Rs." discount="5%" >350</price>
+            <!-- Deatils of the production team-->
+            <production>
+                <producer>Bipul Chhetri</producer>
+                <writer>Nirend ra Mohan Chhetri</writer>
+                <recordLabel>OKListen Media</recordLabel>
+            </production>
+            <!-- Description of the song -->
+            <description>
+                <subTitle>Ode to my father</subTitle>
+                <album>Sketches of Darjeeling</album>
+                <releaseYear>2014</releaseYear>
+                <length>3:20</length>
+                <rating>4.5/5</rating>
+            </description>
+        </song>
+    </music>
+    <!-- Footer of the Page / Contact Details-->
+    <storeDetailsFooter>
+        <logoFooter></logoFooter>
+        <address>Kamalpokhari, Kathmandu</address>
+        <phoneNumber type="landline"> 01-4212335 </phoneNumber>
+        <phoneNumber type="cell"> 9813072072 </phoneNumber>
+        <email>vintagerootsmusic@email.com</email>
+        <website>www.vintagerootsmusic.com</website>
+        <copyright>Copyright © Vintage Roots. All rights Reserved.</copyright>
+    </storeDetailsFooter>
+</musicStore>

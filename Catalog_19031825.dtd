@@ -1,0 +1,53 @@
+<!ELEMENT musicStore (storeDetailsHeader,music,storeDetailsFooter)>
+<!ATTLIST musicStore xmlns:xsi CDATA #REQUIRED xsi:noNamespaceSchemaLocation CDATA #REQUIRED>
+
+<!ELEMENT storeDetailsHeader (logo,storeName,aboutUs)>
+
+<!ELEMENT logo (#PCDATA)>
+<!ELEMENT storeName (#PCDATA)>
+<!ELEMENT aboutUs (#PCDATA)>
+ 
+<!ELEMENT music (song+)>
+
+<!ELEMENT song (title,coverArt?,singer+,genre,price,production,description)>
+<!ATTLIST song songCode CDATA #REQUIRED language CDATA #IMPLIED>
+
+<!ELEMENT title (#PCDATA)>
+
+<!ELEMENT coverArt (#PCDATA)>
+<!ATTLIST coverArt coverID CDATA #REQUIRED>
+
+<!ELEMENT singer (#PCDATA)>
+<!ATTLIST singer singerCode CDATA #REQUIRED>
+
+<!ELEMENT genre (#PCDATA)>
+
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price currency CDATA #REQUIRED discount CDATA #IMPLIED>
+
+<!ELEMENT production (director?,producer*,writer+,recordLabel?)>
+
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT producer (#PCDATA)>
+<!ELEMENT writer (#PCDATA)>
+<!ELEMENT recordLabel (#PCDATA)>
+
+<!ELEMENT description (subTitle?,album?,releaseYear,length,rating?)>
+
+<!ELEMENT subTitle (#PCDATA)>
+<!ELEMENT album (#PCDATA)>
+<!ELEMENT releaseYear (#PCDATA)>
+<!ELEMENT length (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+ 
+<!ELEMENT storeDetailsFooter (logoFooter,address,phoneNumber+,email,website,copyright)>
+
+<!ELEMENT logoFooter (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+
+<!ELEMENT phoneNumber (#PCDATA)>
+<!ATTLIST phoneNumber type (landline|cell) #REQUIRED>
+
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT website (#PCDATA)>
+<!ELEMENT copyright (#PCDATA)>
